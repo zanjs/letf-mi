@@ -125,7 +125,8 @@ class PageController extends Controller
             $form->display('id', 'ID');
 
             $form->text('title', '标题')->rules('required');
-            $form->text('textarea', '描述')->rules('required');
+            $form->textarea('description', '描述')->rules('required');
+            $form->textarea('body', '内容');
             $form->image('image', '缩略图');
 
             $form->display('created_at', 'Created At');
